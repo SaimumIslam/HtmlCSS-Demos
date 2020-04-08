@@ -1,0 +1,146 @@
+/*big tablet*/
+@media only screen and (max-width:1200px) {
+    .links {
+        width: 21vw;
+    }
+
+    .doucment-journal {
+        width: 68vw;
+    }
+
+    .journal-pragraph {
+        width: 80%;
+    }
+}
+
+
+/* small tablet to big tablet*/
+@media only screen and (max-width:1023px) {
+    body {
+        margin: 1rem 1rem;
+    }
+
+    .journal-container .journal-content {
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .links {
+        margin: .8rem;
+    }
+
+    .journal-pragraph {
+        width: 90%;
+    }
+
+    .topnav .search-container {
+        font-size: 1rem;
+        margin: .5rem 2rem;
+    }
+
+    .search-container select {
+        width: 20%;
+        padding: .7rem;
+    }
+
+    .topnav .search-container button {
+        padding: .7rem;
+        width: 15%;
+    }
+
+    .topnav input[type=text] {
+        padding: .7rem;
+        width: 55%;
+    }
+}
+
+/*phone less than ipad*/
+@media only screen and (max-width:767px) {
+    body {
+        font-size: 50%;
+        margin: .3rem .2rem;
+    }
+
+    .header-title h1 {
+        text-align: center;
+    }
+
+    .links {
+        width: 21vw;
+        margin: .2rem;
+    }
+
+    .links ul a {
+        font-size: 1rem;
+    }
+
+    .doucment-journal {
+        width: 67vw;
+    }
+
+    .journal-container .journal-content {
+        padding: .5rem;
+        padding-bottom: 3rem;
+    }
+
+    p {
+        line-height: 130%;
+        word-spacing: .12rem;
+        font-size: 1rem;
+
+    }
+}
+
+
+/*small phone start 0 to 655px*/
+@media only screen and (max-width:655px) {
+    body {
+        font-size: 30%;
+        margin: .2rem .5rem;
+    }
+
+    .decription {
+        display: block;
+    }
+
+    .links {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .resouces-class {
+        margin: 0;
+        width: 90%;
+    }
+
+    .journal-resources {
+        margin: .5rem;
+    }
+
+    .resouce-editor {
+        width: 50%;
+    }
+
+    .doucment-journal {
+        float: none;
+        width: 100%;
+    }
+
+    .topnav .search-container {
+        float: none;
+        margin: .2rem .5rem;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button,
+    .search-container select {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: .5rem;
+    }
+}

@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    background-color: #f8f8f8;
+    color: #222;
+    margin: 1rem 0;
+}
+
+/*
+HEADER
+*/
+
+.header-title h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    text-align: left;
+    text-shadow: 1px 1px 10rem rgba(211, 211, 211, 0.12), 0 0 1.5rem rgba(58, 58, 255, 0.21), 0 0 .5rem rgba(0, 0, 139, 0.26);
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+
+}
+
+.topnav {
+    background-color: #e9e9e9;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.topnav__link {
+    overflow: hidden;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: #fffff;
+    padding: .4rem 1rem;
+    font-family: inherit;
+    margin: 0;
+    background-color: #e9e9e9;
+    margin-right: .6rem;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    border-radius: .4rem;
+}
+
+.topnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8.4rem;
+    box-shadow: 0px .8 1.6rem 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.topnav .dropdown-content a {
+    float: none;
+    color: black;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .search-container {
+    font-size: 1.2rem;
+    margin: .5rem 2rem;
+    overflow: hidden;
+
+}
+
+.search-container select{
+    width: 15%;
+    padding: .8rem;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #555;
+    color: #fff;
+}
+
+.search-form{
+        width: 100%;
+        position: relative;
+    }
+.topnav input[type=text] {
+    float: left;
+    padding: .8rem;
+    border: 1px solid  #555;
+    width: 75%;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: #ccc;
+}
+
+.topnav .search-container button {
+    float: left;
+    width: 10%;
+    padding: .8rem;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    background-color: #aaa;
+    padding: 1rem;
+}
+
+.bottom-nav {
+    overflow: hidden;
+}
+
+.information {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 20%;
+    margin-right: 1rem;
+}
+
+.bottom-nav .information a {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a:active {
+    text-decoration: underline;
+}
+
+.Footer-bottom-terms {
+    text-align: right;
+    margin: .5rem 2rem;
+    font-size: .8rem;
+}
+
+/*SECTION HEADER*/
+
+.journal-nav {
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.journal-nav a {
+    color: #111;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: .4rem 1rem;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    outline: #e3e3e3 solid 2px;
+    border-bottom: 3px solid transparent;
+}
+
+.journal-nav a:hover {
+    border-radius: .4rem;
+    background-color: #ddd;
+    color: #000;
+    border-bottom: 3px solid #666;
+}
+
+.journal-nav a:active {
+    color: #111;
+    border-bottom: 3px solid #666;
+}
+
+.journal-value {
+    margin-top: 1rem;
+    overflow: hidden
+}
+
+.value-option {
+    font-size: .8rem;
+    text-align: left;
+    color: #111;
+    float: left;
+    margin: 1rem .5rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background-image: linear-gradient(rgba(58, 58, 255, 0.21), rgba(0, 0, 139, 0.26));
+}
+
+.value-option span {
+    display: block;
+}
+
+.journal-pragraph {
+    font-size: 1rem;
+    word-spacing: .2rem;
+    width: 75%;
+}
+
+/*
+SECTIONS
+*/
+
+section {
+    margin: 2rem 1.5rem;
+}
+
+.journal-resources {
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.resouces-class {
+    float: left;
+    width: 55vw;
+    margin: 0rem 1rem;
+    font-size: 1rem;
+}
+
+.tablink {
+    background-color: #454448;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.journal-list {
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+}
+
+.journal-list a {
+    text-decoration: none;
+}
+
+.writer a {
+    padding-right: 1rem;
+    display: inline-block;
+}
+
+.journal-list a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    float: left;
+    padding: 1rem 0rem;
+    width: 15vw;
+    font-size: 1.4rem;
+    border-top: 3px solid #555;
+    margin-bottom: 2rem;
+}
+
+.links h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-top: .5rem;
+    border-top: 1px solid #333;
+}
+
+.links ul li:first-child {
+    margin-top: 0;
+    border-top: none;
+}
+
+.links ul a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.links ul a:hover,
+.links ul a:active {
+    color: #000;
+    font-weight: 300i;
+}
+
+.resouce-editor {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 3px solid #555;
+}
+
+.resouce-editor p {
+    display: inline-block;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.doucment-journal {
+    font-size: 1.1rem;
+    width: 90vw;
+    overflow: auto;
+    margin: 1rem auto;
+    scroll-behavior: auto;
+}
+
+.doucment-journal p {
+    text-align: center;
+}
+
+/*
+.journal-grid {
+    width: 100%;
+}
+
+.journal-container {
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.journal-container img {
+    vertical-align: middle;
+    width: 90%;
+}
+
+.journal-container .journal-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fcfcfc;
+    width: 90%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.journal-container .journal-content h2 {
+    color: #fff;
+}
+
+*/
+.doucment-journal .polaroid {
+    width: 25%;
+    background-color: white;
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    float: left;
+    margin: 1rem;
+}
+
+.doucment-journal .container {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.related {
+    text-align: center;
+}
+
+
+
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+
+p {
+    word-spacing: .15rem;
+    text-overflow: ellipsis;
+}
+
+#more a {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #f3f3f3;
+    padding: .2rem;
+    margin: .5rem;
+}
+
+#more a:hover {
+    background-color: rgba(15, 15, 15, 0.9);
+    border: 1px solid rgba(245, 255, 3, 0.35);
+}
+
+article {
+    margin: 0;
+    font-size: 1rem;
+}
